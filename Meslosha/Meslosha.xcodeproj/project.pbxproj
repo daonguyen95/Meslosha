@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EFE293186C519E1281C9E37 /* Pods_Meslosha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EBA2CD58DEF05C6B703D0F /* Pods_Meslosha.framework */; };
+		BC1913141EBB13A500B0C013 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1913131EBB13A500B0C013 /* UIImage+extension.swift */; };
+		BC1913161EBB204400B0C013 /* CGPoint+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1913151EBB204400B0C013 /* CGPoint+extension.swift */; };
+		BC216E571EBAAB100045D8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E561EBAAB100045D8FC /* AppDelegate.swift */; };
+		BC216E5C1EBAAB100045D8FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC216E5A1EBAAB100045D8FC /* Main.storyboard */; };
+		BC216E5E1EBAAB100045D8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC216E5D1EBAAB100045D8FC /* Assets.xcassets */; };
+		BC216E611EBAAB100045D8FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC216E5F1EBAAB100045D8FC /* LaunchScreen.storyboard */; };
+		BC216E721EBAABF50045D8FC /* MLSARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E681EBAABF50045D8FC /* MLSARCameraViewController.swift */; };
+		BC216E731EBAABF50045D8FC /* MLSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E691EBAABF50045D8FC /* MLSButton.swift */; };
+		BC216E741EBAABF50045D8FC /* MLSLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E6A1EBAABF50045D8FC /* MLSLoadingViewController.swift */; };
+		BC216E751EBAABF50045D8FC /* MLSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E6B1EBAABF50045D8FC /* MLSLoginViewController.swift */; };
+		BC216E761EBAABF50045D8FC /* MLSMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E6C1EBAABF50045D8FC /* MLSMapViewController.swift */; };
+		BC216E771EBAABF50045D8FC /* MLSMessTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E6D1EBAABF50045D8FC /* MLSMessTableView.swift */; };
+		BC216E781EBAABF50045D8FC /* MLSMessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E6E1EBAABF50045D8FC /* MLSMessTableViewCell.swift */; };
+		BC216E791EBAABF50045D8FC /* MLSMessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC216E6F1EBAABF50045D8FC /* MLSMessTableViewCell.xib */; };
+		BC216E7A1EBAABF50045D8FC /* MLSMessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E701EBAABF50045D8FC /* MLSMessViewController.swift */; };
+		BC216E7B1EBAABF50045D8FC /* MLSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E711EBAABF50045D8FC /* MLSTextField.swift */; };
+		BC216E821EBAB3EC0045D8FC /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E7D1EBAB3EC0045D8FC /* ARAnnotation.swift */; };
+		BC216E831EBAB3EC0045D8FC /* ARAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E7E1EBAB3EC0045D8FC /* ARAnnotationView.swift */; };
+		BC216E841EBAB3EC0045D8FC /* ARConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E7F1EBAB3EC0045D8FC /* ARConfiguration.swift */; };
+		BC216E851EBAB3EC0045D8FC /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E801EBAB3EC0045D8FC /* ARTrackingManager.swift */; };
+		BC216E861EBAB3EC0045D8FC /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E811EBAB3EC0045D8FC /* ARViewController.swift */; };
+		BC216E8C1EBAB41E0045D8FC /* ARMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E881EBAB41E0045D8FC /* ARMarker.swift */; };
+		BC216E8D1EBAB41E0045D8FC /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E891EBAB41E0045D8FC /* Place.swift */; };
+		BC216E8E1EBAB41E0045D8FC /* PlacesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E8A1EBAB41E0045D8FC /* PlacesLoader.swift */; };
+		BC216E8F1EBAB41E0045D8FC /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E8B1EBAB41E0045D8FC /* MarkerView.swift */; };
+		BC216E911EBAB6570045D8FC /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E901EBAB6570045D8FC /* DebugMapViewController.swift */; };
+		BC216E931EBAB6800045D8FC /* DebugMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC216E921EBAB6800045D8FC /* DebugMapViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42F96430B939E3C5802AFC35 /* Pods-Meslosha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meslosha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meslosha/Pods-Meslosha.release.xcconfig"; sourceTree = "<group>"; };
+		A0EBA2CD58DEF05C6B703D0F /* Pods_Meslosha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meslosha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1913131EBB13A500B0C013 /* UIImage+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		BC1913151EBB204400B0C013 /* CGPoint+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+extension.swift"; sourceTree = "<group>"; };
+		BC216E531EBAAB100045D8FC /* Meslosha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meslosha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC216E561EBAAB100045D8FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC216E5B1EBAAB100045D8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC216E5D1EBAAB100045D8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC216E601EBAAB100045D8FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC216E621EBAAB100045D8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC216E681EBAABF50045D8FC /* MLSARCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSARCameraViewController.swift; sourceTree = "<group>"; };
+		BC216E691EBAABF50045D8FC /* MLSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSButton.swift; sourceTree = "<group>"; };
+		BC216E6A1EBAABF50045D8FC /* MLSLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSLoadingViewController.swift; sourceTree = "<group>"; };
+		BC216E6B1EBAABF50045D8FC /* MLSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSLoginViewController.swift; sourceTree = "<group>"; };
+		BC216E6C1EBAABF50045D8FC /* MLSMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSMapViewController.swift; sourceTree = "<group>"; };
+		BC216E6D1EBAABF50045D8FC /* MLSMessTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSMessTableView.swift; sourceTree = "<group>"; };
+		BC216E6E1EBAABF50045D8FC /* MLSMessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSMessTableViewCell.swift; sourceTree = "<group>"; };
+		BC216E6F1EBAABF50045D8FC /* MLSMessTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLSMessTableViewCell.xib; sourceTree = "<group>"; };
+		BC216E701EBAABF50045D8FC /* MLSMessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSMessViewController.swift; sourceTree = "<group>"; };
+		BC216E711EBAABF50045D8FC /* MLSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSTextField.swift; sourceTree = "<group>"; };
+		BC216E7D1EBAB3EC0045D8FC /* ARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotation.swift; sourceTree = "<group>"; };
+		BC216E7E1EBAB3EC0045D8FC /* ARAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotationView.swift; sourceTree = "<group>"; };
+		BC216E7F1EBAB3EC0045D8FC /* ARConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConfiguration.swift; sourceTree = "<group>"; };
+		BC216E801EBAB3EC0045D8FC /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTrackingManager.swift; sourceTree = "<group>"; };
+		BC216E811EBAB3EC0045D8FC /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		BC216E881EBAB41E0045D8FC /* ARMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARMarker.swift; sourceTree = "<group>"; };
+		BC216E891EBAB41E0045D8FC /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		BC216E8A1EBAB41E0045D8FC /* PlacesLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesLoader.swift; sourceTree = "<group>"; };
+		BC216E8B1EBAB41E0045D8FC /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		BC216E901EBAB6570045D8FC /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMapViewController.swift; sourceTree = "<group>"; };
+		BC216E921EBAB6800045D8FC /* DebugMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugMapViewController.xib; sourceTree = "<group>"; };
+		C0D556BFD9F0300D149E4C84 /* Pods-Meslosha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meslosha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meslosha/Pods-Meslosha.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC216E501EBAAB100045D8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFE293186C519E1281C9E37 /* Pods_Meslosha.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35C59266D168FDA425339843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0EBA2CD58DEF05C6B703D0F /* Pods_Meslosha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67EBA669C5145176F5092DFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0D556BFD9F0300D149E4C84 /* Pods-Meslosha.debug.xcconfig */,
+				42F96430B939E3C5802AFC35 /* Pods-Meslosha.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC216E4A1EBAAB100045D8FC = {
+			isa = PBXGroup;
+			children = (
+				BC216E551EBAAB100045D8FC /* Meslosha */,
+				BC216E541EBAAB100045D8FC /* Products */,
+				67EBA669C5145176F5092DFE /* Pods */,
+				35C59266D168FDA425339843 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC216E541EBAAB100045D8FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC216E531EBAAB100045D8FC /* Meslosha.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC216E551EBAAB100045D8FC /* Meslosha */ = {
+			isa = PBXGroup;
+			children = (
+				BC216E561EBAAB100045D8FC /* AppDelegate.swift */,
+				BC216E871EBAB3F40045D8FC /* AR */,
+				BC216E7C1EBAABFF0045D8FC /* Controllers */,
+				BC216E691EBAABF50045D8FC /* MLSButton.swift */,
+				BC216E6D1EBAABF50045D8FC /* MLSMessTableView.swift */,
+				BC216E6E1EBAABF50045D8FC /* MLSMessTableViewCell.swift */,
+				BC216E6F1EBAABF50045D8FC /* MLSMessTableViewCell.xib */,
+				BC216E711EBAABF50045D8FC /* MLSTextField.swift */,
+				BC216E5A1EBAAB100045D8FC /* Main.storyboard */,
+				BC216E5D1EBAAB100045D8FC /* Assets.xcassets */,
+				BC216E5F1EBAAB100045D8FC /* LaunchScreen.storyboard */,
+				BC216E621EBAAB100045D8FC /* Info.plist */,
+				BC1913131EBB13A500B0C013 /* UIImage+extension.swift */,
+				BC1913151EBB204400B0C013 /* CGPoint+extension.swift */,
+			);
+			path = Meslosha;
+			sourceTree = "<group>";
+		};
+		BC216E7C1EBAABFF0045D8FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC216E6A1EBAABF50045D8FC /* MLSLoadingViewController.swift */,
+				BC216E6B1EBAABF50045D8FC /* MLSLoginViewController.swift */,
+				BC216E6C1EBAABF50045D8FC /* MLSMapViewController.swift */,
+				BC216E701EBAABF50045D8FC /* MLSMessViewController.swift */,
+				BC216E681EBAABF50045D8FC /* MLSARCameraViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BC216E871EBAB3F40045D8FC /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				BC216E881EBAB41E0045D8FC /* ARMarker.swift */,
+				BC216E891EBAB41E0045D8FC /* Place.swift */,
+				BC216E8A1EBAB41E0045D8FC /* PlacesLoader.swift */,
+				BC216E8B1EBAB41E0045D8FC /* MarkerView.swift */,
+				BC216E7D1EBAB3EC0045D8FC /* ARAnnotation.swift */,
+				BC216E7E1EBAB3EC0045D8FC /* ARAnnotationView.swift */,
+				BC216E7F1EBAB3EC0045D8FC /* ARConfiguration.swift */,
+				BC216E801EBAB3EC0045D8FC /* ARTrackingManager.swift */,
+				BC216E811EBAB3EC0045D8FC /* ARViewController.swift */,
+				BC216E901EBAB6570045D8FC /* DebugMapViewController.swift */,
+				BC216E921EBAB6800045D8FC /* DebugMapViewController.xib */,
+			);
+			name = AR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC216E521EBAAB100045D8FC /* Meslosha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC216E651EBAAB100045D8FC /* Build configuration list for PBXNativeTarget "Meslosha" */;
+			buildPhases = (
+				12F61A43CD83CA65CF970324 /* [CP] Check Pods Manifest.lock */,
+				BC216E4F1EBAAB100045D8FC /* Sources */,
+				BC216E501EBAAB100045D8FC /* Frameworks */,
+				BC216E511EBAAB100045D8FC /* Resources */,
+				090714CEEBB2F13E2AE6EBBF /* [CP] Embed Pods Frameworks */,
+				B75AFF17823DAE13B94B01B0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meslosha;
+			productName = Meslosha;
+			productReference = BC216E531EBAAB100045D8FC /* Meslosha.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC216E4B1EBAAB100045D8FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "VAN DAO";
+				TargetAttributes = {
+					BC216E521EBAAB100045D8FC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BDV755QFU7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BC216E4E1EBAAB100045D8FC /* Build configuration list for PBXProject "Meslosha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC216E4A1EBAAB100045D8FC;
+			productRefGroup = BC216E541EBAAB100045D8FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC216E521EBAAB100045D8FC /* Meslosha */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC216E511EBAAB100045D8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC216E931EBAB6800045D8FC /* DebugMapViewController.xib in Resources */,
+				BC216E791EBAABF50045D8FC /* MLSMessTableViewCell.xib in Resources */,
+				BC216E611EBAAB100045D8FC /* LaunchScreen.storyboard in Resources */,
+				BC216E5E1EBAAB100045D8FC /* Assets.xcassets in Resources */,
+				BC216E5C1EBAAB100045D8FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		090714CEEBB2F13E2AE6EBBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meslosha/Pods-Meslosha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12F61A43CD83CA65CF970324 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B75AFF17823DAE13B94B01B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meslosha/Pods-Meslosha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC216E4F1EBAAB100045D8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC216E8E1EBAB41E0045D8FC /* PlacesLoader.swift in Sources */,
+				BC216E771EBAABF50045D8FC /* MLSMessTableView.swift in Sources */,
+				BC216E821EBAB3EC0045D8FC /* ARAnnotation.swift in Sources */,
+				BC216E911EBAB6570045D8FC /* DebugMapViewController.swift in Sources */,
+				BC216E761EBAABF50045D8FC /* MLSMapViewController.swift in Sources */,
+				BC216E841EBAB3EC0045D8FC /* ARConfiguration.swift in Sources */,
+				BC1913161EBB204400B0C013 /* CGPoint+extension.swift in Sources */,
+				BC216E8F1EBAB41E0045D8FC /* MarkerView.swift in Sources */,
+				BC216E571EBAAB100045D8FC /* AppDelegate.swift in Sources */,
+				BC216E751EBAABF50045D8FC /* MLSLoginViewController.swift in Sources */,
+				BC216E7B1EBAABF50045D8FC /* MLSTextField.swift in Sources */,
+				BC216E781EBAABF50045D8FC /* MLSMessTableViewCell.swift in Sources */,
+				BC216E721EBAABF50045D8FC /* MLSARCameraViewController.swift in Sources */,
+				BC216E8D1EBAB41E0045D8FC /* Place.swift in Sources */,
+				BC216E861EBAB3EC0045D8FC /* ARViewController.swift in Sources */,
+				BC216E741EBAABF50045D8FC /* MLSLoadingViewController.swift in Sources */,
+				BC216E7A1EBAABF50045D8FC /* MLSMessViewController.swift in Sources */,
+				BC216E851EBAB3EC0045D8FC /* ARTrackingManager.swift in Sources */,
+				BC216E831EBAB3EC0045D8FC /* ARAnnotationView.swift in Sources */,
+				BC1913141EBB13A500B0C013 /* UIImage+extension.swift in Sources */,
+				BC216E8C1EBAB41E0045D8FC /* ARMarker.swift in Sources */,
+				BC216E731EBAABF50045D8FC /* MLSButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC216E5A1EBAAB100045D8FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC216E5B1EBAAB100045D8FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC216E5F1EBAAB100045D8FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC216E601EBAAB100045D8FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC216E631EBAAB100045D8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC216E641EBAAB100045D8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC216E661EBAAB100045D8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D556BFD9F0300D149E4C84 /* Pods-Meslosha.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BDV755QFU7;
+				INFOPLIST_FILE = Meslosha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daonv.Meslosha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BC216E671EBAAB100045D8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F96430B939E3C5802AFC35 /* Pods-Meslosha.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BDV755QFU7;
+				INFOPLIST_FILE = Meslosha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = daonv.Meslosha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC216E4E1EBAAB100045D8FC /* Build configuration list for PBXProject "Meslosha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC216E631EBAAB100045D8FC /* Debug */,
+				BC216E641EBAAB100045D8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC216E651EBAAB100045D8FC /* Build configuration list for PBXNativeTarget "Meslosha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC216E661EBAAB100045D8FC /* Debug */,
+				BC216E671EBAAB100045D8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC216E4B1EBAAB100045D8FC /* Project object */;
+}
