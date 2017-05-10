@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2EFE293186C519E1281C9E37 /* Pods_Meslosha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EBA2CD58DEF05C6B703D0F /* Pods_Meslosha.framework */; };
+		4220C7961EC172F100283C96 /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4220C7941EC172F100283C96 /* Models.xcdatamodeld */; };
+		42210E451EBF225000B6D5A1 /* MLSDropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42210E441EBF225000B6D5A1 /* MLSDropboxClient.swift */; };
+		4224CEEE1EBDA27D00C57D80 /* MLSDropboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4224CEED1EBDA27D00C57D80 /* MLSDropboxTableViewCell.xib */; };
+		4224CEF01EBDA9E100C57D80 /* MLSDropboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224CEEF1EBDA9E100C57D80 /* MLSDropboxTableViewCell.swift */; };
+		4224CEF31EBDB1FB00C57D80 /* MSLDropboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224CEF21EBDB1FB00C57D80 /* MSLDropboxTableViewController.swift */; };
+		4224CEF61EBDED2200C57D80 /* DropboxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4224CEF51EBDED2200C57D80 /* DropboxItem.swift */; };
+		4250CFD81EC0B09000D949DB /* DopboxFileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250CFD71EC0B09000D949DB /* DopboxFileDetailViewController.swift */; };
 		BC1913141EBB13A500B0C013 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1913131EBB13A500B0C013 /* UIImage+extension.swift */; };
 		BC1913161EBB204400B0C013 /* CGPoint+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1913151EBB204400B0C013 /* CGPoint+extension.swift */; };
 		BC216E571EBAAB100045D8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC216E561EBAAB100045D8FC /* AppDelegate.swift */; };
@@ -38,6 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4220C7951EC172F100283C96 /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
+		42210E441EBF225000B6D5A1 /* MLSDropboxClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSDropboxClient.swift; sourceTree = "<group>"; };
+		4224CEED1EBDA27D00C57D80 /* MLSDropboxTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLSDropboxTableViewCell.xib; sourceTree = "<group>"; };
+		4224CEEF1EBDA9E100C57D80 /* MLSDropboxTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLSDropboxTableViewCell.swift; sourceTree = "<group>"; };
+		4224CEF21EBDB1FB00C57D80 /* MSLDropboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSLDropboxTableViewController.swift; sourceTree = "<group>"; };
+		4224CEF51EBDED2200C57D80 /* DropboxItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxItem.swift; sourceTree = "<group>"; };
+		4250CFD71EC0B09000D949DB /* DopboxFileDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopboxFileDetailViewController.swift; sourceTree = "<group>"; };
 		42F96430B939E3C5802AFC35 /* Pods-Meslosha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meslosha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meslosha/Pods-Meslosha.release.xcconfig"; sourceTree = "<group>"; };
 		A0EBA2CD58DEF05C6B703D0F /* Pods_Meslosha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meslosha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1913131EBB13A500B0C013 /* UIImage+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
@@ -92,6 +106,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4224CEEC1EBDA1DB00C57D80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4224CEF11EBDAA3900C57D80 /* Cells */,
+				BC216E5A1EBAAB100045D8FC /* Main.storyboard */,
+				BC216E5F1EBAAB100045D8FC /* LaunchScreen.storyboard */,
+				BC216E6F1EBAABF50045D8FC /* MLSMessTableViewCell.xib */,
+				4224CEED1EBDA27D00C57D80 /* MLSDropboxTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4224CEF11EBDAA3900C57D80 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4224CEEF1EBDA9E100C57D80 /* MLSDropboxTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		4224CEF41EBDED0400C57D80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4224CEF51EBDED2200C57D80 /* DropboxItem.swift */,
+				42210E441EBF225000B6D5A1 /* MLSDropboxClient.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		67EBA669C5145176F5092DFE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,20 +165,20 @@
 		BC216E551EBAAB100045D8FC /* Meslosha */ = {
 			isa = PBXGroup;
 			children = (
+				4224CEF41EBDED0400C57D80 /* Models */,
+				4224CEEC1EBDA1DB00C57D80 /* Views */,
 				BC216E561EBAAB100045D8FC /* AppDelegate.swift */,
 				BC216E871EBAB3F40045D8FC /* AR */,
 				BC216E7C1EBAABFF0045D8FC /* Controllers */,
 				BC216E691EBAABF50045D8FC /* MLSButton.swift */,
 				BC216E6D1EBAABF50045D8FC /* MLSMessTableView.swift */,
 				BC216E6E1EBAABF50045D8FC /* MLSMessTableViewCell.swift */,
-				BC216E6F1EBAABF50045D8FC /* MLSMessTableViewCell.xib */,
 				BC216E711EBAABF50045D8FC /* MLSTextField.swift */,
-				BC216E5A1EBAAB100045D8FC /* Main.storyboard */,
 				BC216E5D1EBAAB100045D8FC /* Assets.xcassets */,
-				BC216E5F1EBAAB100045D8FC /* LaunchScreen.storyboard */,
 				BC216E621EBAAB100045D8FC /* Info.plist */,
 				BC1913131EBB13A500B0C013 /* UIImage+extension.swift */,
 				BC1913151EBB204400B0C013 /* CGPoint+extension.swift */,
+				4220C7941EC172F100283C96 /* Models.xcdatamodeld */,
 			);
 			path = Meslosha;
 			sourceTree = "<group>";
@@ -148,6 +191,8 @@
 				BC216E6C1EBAABF50045D8FC /* MLSMapViewController.swift */,
 				BC216E701EBAABF50045D8FC /* MLSMessViewController.swift */,
 				BC216E681EBAABF50045D8FC /* MLSARCameraViewController.swift */,
+				4224CEF21EBDB1FB00C57D80 /* MSLDropboxTableViewController.swift */,
+				4250CFD71EC0B09000D949DB /* DopboxFileDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -205,7 +250,7 @@
 				TargetAttributes = {
 					BC216E521EBAAB100045D8FC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = BDV755QFU7;
+						DevelopmentTeam = 77LVJKWHTW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -234,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC216E931EBAB6800045D8FC /* DebugMapViewController.xib in Resources */,
+				4224CEEE1EBDA27D00C57D80 /* MLSDropboxTableViewCell.xib in Resources */,
 				BC216E791EBAABF50045D8FC /* MLSMessTableViewCell.xib in Resources */,
 				BC216E611EBAAB100045D8FC /* LaunchScreen.storyboard in Resources */,
 				BC216E5E1EBAAB100045D8FC /* Assets.xcassets in Resources */,
@@ -307,6 +353,8 @@
 				BC216E571EBAAB100045D8FC /* AppDelegate.swift in Sources */,
 				BC216E751EBAABF50045D8FC /* MLSLoginViewController.swift in Sources */,
 				BC216E7B1EBAABF50045D8FC /* MLSTextField.swift in Sources */,
+				4220C7961EC172F100283C96 /* Models.xcdatamodeld in Sources */,
+				4224CEF01EBDA9E100C57D80 /* MLSDropboxTableViewCell.swift in Sources */,
 				BC216E781EBAABF50045D8FC /* MLSMessTableViewCell.swift in Sources */,
 				BC216E721EBAABF50045D8FC /* MLSARCameraViewController.swift in Sources */,
 				BC216E8D1EBAB41E0045D8FC /* Place.swift in Sources */,
@@ -316,8 +364,12 @@
 				BC216E851EBAB3EC0045D8FC /* ARTrackingManager.swift in Sources */,
 				BC216E831EBAB3EC0045D8FC /* ARAnnotationView.swift in Sources */,
 				BC1913141EBB13A500B0C013 /* UIImage+extension.swift in Sources */,
+				42210E451EBF225000B6D5A1 /* MLSDropboxClient.swift in Sources */,
 				BC216E8C1EBAB41E0045D8FC /* ARMarker.swift in Sources */,
+				4250CFD81EC0B09000D949DB /* DopboxFileDetailViewController.swift in Sources */,
+				4224CEF61EBDED2200C57D80 /* DropboxItem.swift in Sources */,
 				BC216E731EBAABF50045D8FC /* MLSButton.swift in Sources */,
+				4224CEF31EBDB1FB00C57D80 /* MSLDropboxTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,11 +493,11 @@
 			baseConfigurationReference = C0D556BFD9F0300D149E4C84 /* Pods-Meslosha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BDV755QFU7;
+				DEVELOPMENT_TEAM = 77LVJKWHTW;
 				INFOPLIST_FILE = Meslosha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = daonv.Meslosha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metmoi.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -456,11 +508,11 @@
 			baseConfigurationReference = 42F96430B939E3C5802AFC35 /* Pods-Meslosha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BDV755QFU7;
+				DEVELOPMENT_TEAM = 77LVJKWHTW;
 				INFOPLIST_FILE = Meslosha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = daonv.Meslosha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metmoi.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -488,6 +540,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4220C7941EC172F100283C96 /* Models.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4220C7951EC172F100283C96 /* Models.xcdatamodel */,
+			);
+			currentVersion = 4220C7951EC172F100283C96 /* Models.xcdatamodel */;
+			path = Models.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BC216E4B1EBAAB100045D8FC /* Project object */;
 }

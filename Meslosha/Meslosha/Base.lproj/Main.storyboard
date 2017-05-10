@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e9K-Or-BbW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xZN-dK-phc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -451,6 +451,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgH-so-ajV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1820" y="814.54272863568224"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WId-OW-7wL">
+            <objects>
+                <navigationController id="xZN-dK-phc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8LR-cf-H5e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NKC-Rn-rLD" kind="relationship" relationship="rootViewController" id="B6C-2f-Iop"/>
+                        <segue destination="fyH-xe-q7i" kind="show" id="QoK-wR-JPc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kK-b4-oO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="1543"/>
+        </scene>
+        <!--Dropbox Table View Controller-->
+        <scene sceneID="san-7J-MHF">
+            <objects>
+                <tableViewController storyboardIdentifier="DropboxTableViewController" id="NKC-Rn-rLD" customClass="MSLDropboxTableViewController" customModule="Meslosha" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wQj-AI-4pY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DropboxTableViewCell" id="wlP-Dr-Z1Q" customClass="MLSDropboxTableViewCell" customModule="Meslosha" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wlP-Dr-Z1Q" id="w4C-wL-XKA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NKC-Rn-rLD" id="9or-Bz-538"/>
+                            <outlet property="delegate" destination="NKC-Rn-rLD" id="ZWD-Bz-CuE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Msy-i8-fXL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ydc-QA-B7r">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="NKC-Rn-rLD" id="Cbm-Bu-lwU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addFileButton" destination="Ydc-QA-B7r" id="YsH-Zo-nek"/>
+                        <outlet property="dropboxTableView" destination="wQj-AI-4pY" id="d5G-5d-6Q3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YiN-sG-i87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="1543"/>
+        </scene>
+        <!--Dropbox File Detail View Controller-->
+        <scene sceneID="M5t-c7-bIY">
+            <objects>
+                <viewController storyboardIdentifier="DropboxFileDetail" id="fyH-xe-q7i" customClass="DropboxFileDetailViewController" customModule="Meslosha" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cAm-F6-NIU"/>
+                        <viewControllerLayoutGuide type="bottom" id="UJf-We-kZe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pyd-t0-IeF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGn-8F-pJV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="iGn-8F-pJV" id="2zT-P9-XZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="926-W8-QZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="2226.8365817091458"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YKK-k4-JTd">

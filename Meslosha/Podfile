@@ -12,6 +12,7 @@ target 'Meslosha' do
  pod 'FacebookLogin'
  pod 'FacebookShare'
  pod ‘GoogleSignIn’
+ pod 'SwiftyDropbox'
  pod 'GradientCircularProgress', :git => 'https://github.com/keygx/GradientCircularProgress'
     
     post_install do |installer|
